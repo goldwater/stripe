@@ -1,0 +1,34 @@
+{
+  "name": "serverless-stripe-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "node_modules/.bin/jest",
+    "test:coverage": "open coverage/lcov-report/index.html",
+    "eslint": "./node_modules/.bin/eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosriady/serverless-stripe-backend.git"
+  },
+  "author": "Yos Riady",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yosriady/serverless-stripe-backend/issues"
+  },
+  "homepage": "https://github.com/yosriady/serverless-stripe-backend#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.0.1",
+    "jest": "^20.0.4",
+    "nock": "^9.0.13"
+  },
+  "jest": {
+    "collectCoverage": true
+  },
+  "dependencies": {
+    "stripe": "^7.11.0"
+  }
+}
