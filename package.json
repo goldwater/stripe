@@ -1,8 +1,7 @@
 {
-  "name": "serverless-stripe-backend",
+  "name": "stripe",
   "version": "1.0.0",
-  "description": "",
-  "main": "handler.js",
+  "description": "A lambda function for serverless deposit payment processing",
   "scripts": {
     "test": "node_modules/.bin/jest",
     "test:coverage": "open coverage/lcov-report/index.html",
@@ -10,14 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yosriady/serverless-stripe-backend.git"
+    "url": "git+https://github.com/goldwater/stripe.git"
   },
-  "author": "Yos Riady",
-  "license": "ISC",
+  "author": "Zane Mountcastle",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yosriady/serverless-stripe-backend/issues"
+    "url": "https://github.com/goldwater/stripe"
   },
-  "homepage": "https://github.com/yosriady/serverless-stripe-backend#readme",
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.1.3",
