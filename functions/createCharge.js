@@ -9,8 +9,15 @@ module.exports.handler = (event, context, callback) => {
   const token = requestBody.token.id;
   const amount = requestBody.charge.amount;
   const currency = requestBody.charge.currency;
-  const name = requestBody.name;
-  const email = requestBody.email;
+  const name = requestBody.metadata.name;
+  const email = requestBody.metadata.email;
+  const company = requestBody.metadata.company;
+  const phone = requestBody.metadata.phone;
+  const installationAddress = requestBody.metadata.installationAddress;
+  const sensor = requestBody.metadata.sensor;
+  const connectivity = requestBody.metadata.connectivity;
+  const plan = requestBody.metadata.plan;
+  const quantity = requestBody.metadata.quantity;
 
   return stripe.charges.create({ // Create Stripe charge with token
     amount: amount,
@@ -19,7 +26,14 @@ module.exports.handler = (event, context, callback) => {
     source: token,
     metadata: {
       name: name,
-      email: email
+      email: email,
+      company: company,
+      phone: phone,
+      installationAddress: installationAddress,
+      sensor: sensor,
+      connectivity: connectivity,
+      plan: plan,
+      quantity: quantity,
     }
   })
     .then((charge) => { // Success response
