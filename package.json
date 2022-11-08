@@ -17,7 +17,7 @@
     "url": "https://github.com/goldwater/stripe"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^11.1.3",
     "eslint-plugin-import": "^2.0.1",
     "jest": "^20.0.4",
